@@ -2,28 +2,28 @@ package com.example.journalist_media_manager_springboot.dto.user;
 
 public class UserDetailsDto {
 
-    //    private Integer id;
+    private Integer id;
     private String username;
-    //    private String email;
+    private String email;
     private RoleDto roleDto;
 
     public UserDetailsDto() {
     }
 
     public UserDetailsDto(String username, RoleDto roleDto) {
-//        this.id = id;
+        this.id = id;
         this.username = username;
-//        this.email = email;
+        this.email = email;
         this.roleDto = roleDto;
     }
 
-//    public Integer getId() {
-//        return id;
-//    }
-//
-//    public void setId(Integer id) {
-//        this.id = id;
-//    }
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
@@ -33,13 +33,13 @@ public class UserDetailsDto {
         this.username = username;
     }
 
-//    public String getEmail() {
-//        return email;
-//    }
-//
-//    public void setEmail(String email) {
-//        this.email = email;
-//    }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public RoleDto getRoleDto() {
         return roleDto;

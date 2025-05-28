@@ -43,7 +43,7 @@ public class JwtUtils {
 
         return Jwts.builder()
                 .setClaims(claims)
-                //.setSubject((userDetails.getId().toString()))
+                .setSubject((userDetails.getId().toString()))
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(new Date().getTime() + jwtExpirationMs))
                 .signWith(getSigningKey(), SignatureAlgorithm.HS512)

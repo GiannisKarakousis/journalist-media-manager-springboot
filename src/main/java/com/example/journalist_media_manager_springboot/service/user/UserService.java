@@ -158,10 +158,10 @@ public class UserService {
         this.unlockUserLogin(user);
 
         UserDetailsDto userDetailsDto = new UserDetailsDto();
-//        userDetailsDto.setId(userDetailsImpl.getId());
+        userDetailsDto.setId(userDetailsImpl.getId());
         userDetailsDto.setUsername(userDetailsImpl.getUsername());
         userDetailsDto.setRoleDto(userDetailsImpl.getRoleDto());
-//        userDetailsDto.setEmail(userDetailsImpl.getEmail());
+        userDetailsDto.setEmail(userDetailsImpl.getEmail());
 
         String jwt = jwtUtils.generateJwtToken(userDetailsDto);
         //String jwtRefresh = jwtUtils.generateRefreshJwtToken(String.valueOf(userDetails.getId()));
