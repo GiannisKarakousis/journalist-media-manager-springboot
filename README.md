@@ -143,3 +143,4 @@ security.loginLockTimeInMinutes=${SECURITY_LOGIN_LOCK_TIME:5}
 ## 📌 TODO
 - Implement JWT Refresh Token
 - Add User Management APIs (GET paginated, DELETE, PATCH)
+- Add Journalist edit history (updated by user, created by user, date updated etc)
